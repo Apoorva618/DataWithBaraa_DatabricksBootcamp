@@ -23,19 +23,28 @@ The goal was to create a production style lakehouse and implement the medallion 
 ## How did I start? 
 Step 1 : Visualize the schema and the possible relationships between the tables 
 <img width="743" height="601" alt="image" src="https://github.com/user-attachments/assets/d3bb173c-9405-4795-a841-b12b8f3e81ec" />
+
 Step 2 : Ingest into the Bronze layer
+
 Step 3 : Go through each table and think of transformations that makes the table clean, reliable and ready for business use 
+
 Step 4 : Write (babysit) some pySpark code to make those changes 
+
 Step 5 : Write into the Silver layer once happy
+
 <img width="1229" height="302" alt="silver_data_transformation drawio (1)" src="https://github.com/user-attachments/assets/9515be1c-2fc0-4ed0-b469-9ea47d4b8b77" />
+
 Step 6 : Make the joins to implement a STAR schema
 <img width="651" height="431" alt="gold drawio" src="https://github.com/user-attachments/assets/a9959368-b864-41d3-9740-bfeacae0a23f" />
+
 Step 7 : Orchestrate the pipeline and watch your baby go 
 
 ## What can business users do with it? 
+
 Stalk their customers 
 - Figure out if there's a correlation between variables ( gender, marital status, country, age) and sales
 - Adjust their marketing strategy
+
 Look within
 - Which products have the highest profit margins? Can we discontinue some SKUs based on demand and sales? 
 - Is there a latency in their supply chain? What's their average order fulfillment time? Can they make it faster?
